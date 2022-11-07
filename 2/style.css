@@ -16,15 +16,17 @@
 }
 
 .image{
+    max-width: 600px;
     position: absolute;
     left: 600px;
 }
 .activeImage{
     display: inline-block;
     position: absolute;
-    transition: 1s;
     left: 0;
-
+}
+.deactivateImage{
+    left: -600px;
 }
 .dots{
     text-align: center;
@@ -60,7 +62,21 @@
     color: #9496a8;
 }
 
-@keyframes slide {
-    from{transform: skewX(20deg);}
-    to{transform: skewX(-20deg);}
+@keyframes slideRight {
+    0% {left: 600px}
+    100%{left: 0}
+}
+
+@keyframes deslideRight {
+    0% {left: 0}
+    100%{left: -600px}
+}
+@keyframes slideLeft {
+    0% {left: -600px}
+    100%{left: 0}
+}
+
+@keyframes deslideLeft {
+    0% {left: 0}
+    100%{left: 600px}
 }
