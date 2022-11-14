@@ -1,0 +1,41 @@
+
+.notes {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.note {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+    position: relative;
+
+}
+.description{
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+}
+
+
+.newNote{
+}
+
+.pin{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:0;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.clickedPin{
+    color: red;
+}
